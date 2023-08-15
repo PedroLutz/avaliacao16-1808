@@ -1,9 +1,11 @@
+//definição das APIs e das rotas
 const express = require('express');
 const router = express.Router();
 const sequelize = require('./sequelize');
 const Posts = require('./model/posts');
 const Usuarios = require('./model/usuarios');
 sequelize.sync();  
+
 //GET Retorna dados com paginação e ordenação
 
 //retorna posts

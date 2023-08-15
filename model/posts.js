@@ -2,6 +2,7 @@ const db = require("../sequelize");
 const sequelize = require("sequelize");
 const Usuarios = require('./usuarios');
 
+//criação da tabela posts, com as linhas id, titulo, conteudo e autor_id
 const Posts = db.define("posts", {
     id: {
         type: sequelize.INTEGER,
